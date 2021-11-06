@@ -14,7 +14,7 @@ public class Leitor extends javax.swing.JFrame {
      */
     public Leitor() {
         initComponents();
-        lblFrase.setText("<html>Vou pensar um numero de 1 ate 5. Tente adivinhar</html>");
+        lblFrase.setText("<html><center>Vou pensar um numero de 1 ate 5. Tente adivinhar</html>");
     }
 
     /**
@@ -39,7 +39,7 @@ public class Leitor extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-gênio-220.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 120, 204, -1));
 
-        lblFrase.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblFrase.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         lblFrase.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFrase.setText("Frase");
         getContentPane().add(lblFrase, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, 110, 90));
@@ -47,20 +47,22 @@ public class Leitor extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icons8-balão-de-fala-190.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 190, 172));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Valor");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 60, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 60, 30));
 
-        txtVal.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        txtVal.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         txtVal.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
         getContentPane().add(txtVal, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 50, -1));
 
-        btnPalpite.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        btnPalpite.setForeground(new java.awt.Color(255, 51, 51));
+        btnPalpite.setBackground(new java.awt.Color(204, 0, 0));
+        btnPalpite.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+        btnPalpite.setForeground(new java.awt.Color(255, 255, 255));
         btnPalpite.setText("Palpite");
         btnPalpite.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnPalpite.setBorderPainted(false);
+        btnPalpite.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPalpite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPalpiteActionPerformed(evt);
@@ -76,9 +78,9 @@ public class Leitor extends javax.swing.JFrame {
         int valor = (int) numero;
         int num = Integer.parseInt(txtVal.getValue().toString());
         String f1 = "<html>Acertou!</html>"; 
-        String f2 = "<html>Errou!, pensei no numero "+valor+"</html>";
+        String f2 = "<html><center>Errou! pensei no numero "+valor+"</html>";
         String res = (valor == num)?f1:f2;
-        lblFrase.setFont(new Font("Arial", Font.PLAIN, 18));
+        lblFrase.setFont(new Font("Calibri", Font.PLAIN, 18));
         lblFrase.setText(res);
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
