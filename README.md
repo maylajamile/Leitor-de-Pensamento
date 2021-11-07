@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/84540551/140654467-90e07cba-41ae-4fa9-a2e3-148aed8896ec.png"/>
   <p>Leitor de Pensamento</p>
   <p>Adivinhe o número que o gênio está pensando 👁️👄👁️</p>
-<h1/>
+</h1>
  
 <h1 align="center">
   <img src="https://media.giphy.com/media/NtjC2lklFQMqwF6kbu/giphy.gif"/>  
